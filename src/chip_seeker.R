@@ -26,8 +26,9 @@ library(clusterProfiler)
 
 ###
 
-NAME <- 'H3K9me3_MEL.ENCFF175TIH.mm10.filtered'
+#NAME <- 'H3K9me3_MEL.ENCFF175TIH.mm10.filtered'
 #NAME <- 'H3K9me3_MEL.ENCFF725BPX.mm10.filtered'
+NAME <- 'mouseZ-DNA1'
 BED_FN <- paste0(DATA_DIR, NAME, '.bed')
 
 
