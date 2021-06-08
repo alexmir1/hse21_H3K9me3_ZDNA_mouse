@@ -10,9 +10,10 @@ OUT_DIR <- 'images/'
 
 ###
 
-#NAME <- 'H3K9me3_MEL.ENCFF175TIH.mm10'
+NAME <- 'H3K9me3_MEL.ENCFF175TIH.mm10'
 #NAME <- 'H3K9me3_MEL.ENCFF725BPX.mm10'
-NAME <- 'mouseZ-DNA1'
+#NAME <- 'mouseZ-DNA1'
+#NAME  <- 'H3K9me3_MEL.intersect_with_mouseZ-DNA1'
 
 ###
 
@@ -26,4 +27,4 @@ ggplot(bed_df) +
   geom_histogram() +
   ggtitle(NAME, subtitle = sprintf('Number of peaks = %s', nrow(bed_df))) +
   theme_bw()
-ggsave(paste0('len_hist.', NAME, '.pdf'), path = OUT_DIR)
+ggsave(paste0('len_hist.', NAME, '.png'), path = OUT_DIR)
