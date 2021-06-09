@@ -50,7 +50,7 @@ bedtools intersect -a mouseZ-DNA1.bed -b H3K9me3_MEL.merge.mm10.bed > H3K9me3_ME
 
 http://genome.ucsc.edu/s/alexmir/hse21_H3K9me3_ZDNA_mouse
 ### Ассоциируем полученные пересечения с ближайшими генами
-Я увеличил границы поиска до (-1000000, 1000000), чтобы по трём пересечениям получить хоть какие-то гены. Получилось 17 генов.
+Я увеличил границы поиска до (-1000000, 1000000), чтобы по трём пересечениям получить хоть какие-то гены. Получилось 17 уникальных генов.
 ### GO-анализ
 Результат: "No statistically significant results"
 Все результаты в https://github.com/alexmir1/hse21_H3K9me3_ZDNA_mouse/raw/master/data/go-analysis.txt

@@ -11,7 +11,7 @@ OUT_DIR <- 'images/'
 ###
 
 # https://bioconductor.org/packages/release/bioc/vignettes/ChIPpeakAnno/inst/doc/quickStart.html
-BiocManager::install("ChIPpeakAnno")
+#BiocManager::install("ChIPpeakAnno")
 # BiocManager::install("org.Hs.eg.db")
 # BiocManager::install("org.Mm.eg.db")
 
@@ -34,7 +34,7 @@ annoData[1:2]
 anno <- annotatePeakInBatch(peaks, AnnotationData=annoData, 
                             output="overlapping", 
                             FeatureLocForDistance="TSS",
-                            bindingRegion=c(-10000000, 10000000))
+                            bindingRegion=c(-1000000, 1000000))
 data.frame(anno) %>% head()
 
 anno$symbol <- xget(anno$feature, org.Mm.egSYMBOL)
